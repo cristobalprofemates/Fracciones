@@ -445,6 +445,92 @@ body {
     border-radius: 15px;
     padding: 20px;
     margin-bottom: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.new-achievements.active {
+    display: flex;
+}
+
+.new-achievements h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.new-achievement-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.new-achievement-item strong {
+    font-size: 16px;
+}
+
+.new-achievement-item small {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+.scoreboard {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.scoreboard h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.scoreboard-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.scoreboard-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    padding: 14px;
+    border-radius: 12px;
+    background: #f8f9fa;
+    border: 1px solid rgba(102, 126, 234, 0.25);
+}
+
+.scoreboard-item.highlight {
+    border: 2px solid #667eea;
+    background: rgba(102, 126, 234, 0.08);
+}
+
+.scoreboard-item span {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 14px;
+    color: #555;
+}
+
+.scoreboard-item span strong {
+    font-size: 18px;
+    color: #333;
+}
+
+.scoreboard-empty {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
 }
 
 .results-buttons {
@@ -624,6 +710,9 @@ body.sidebar-open .sidebar-overlay {
         width: 100%;
         justify-content: center;
     }
+    .scoreboard-item {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
 }
 
 @media (max-width: 520px) {
@@ -644,5 +733,8 @@ body.sidebar-open .sidebar-overlay {
 
     .results-buttons {
         flex-direction: column;
+    }
+    .scoreboard-item {
+        grid-template-columns: 1fr;
     }
 }

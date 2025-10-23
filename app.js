@@ -67,6 +67,50 @@ const GAME_DATA = {
         ],
         "respuesta_correcta": 0,
         "explicacion": "El denominador común es 16: 5/8 = 10/16, luego 10/16 + 3/16 = 13/16"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 3/4 + 2/3?",
+        "opciones": [
+          "17/12",
+          "5/7",
+          "11/12",
+          "13/12"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "El mínimo común denominador de 4 y 3 es 12: 3/4 = 9/12 y 2/3 = 8/12; 9 + 8 = 17/12"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 5/12 + 7/18?",
+        "opciones": [
+          "29/36",
+          "12/30",
+          "17/30",
+          "23/36"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "MCM de 12 y 18 es 36: 5/12 = 15/36 y 7/18 = 14/36; 15 + 14 = 29/36"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 7/10 + 5/8?",
+        "opciones": [
+          "53/40",
+          "12/18",
+          "3/4",
+          "47/40"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Convertimos a cuadragésimos: 7/10 = 28/40 y 5/8 = 25/40; 28 + 25 = 53/40"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 1/9 + 5/6?",
+        "opciones": [
+          "17/18",
+          "11/18",
+          "5/15",
+          "16/18"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Usamos denominador común 18: 1/9 = 2/18 y 5/6 = 15/18; 2 + 15 = 17/18"
       }
     ],
     "resta": [
@@ -135,6 +179,50 @@ const GAME_DATA = {
         ],
         "respuesta_correcta": 0,
         "explicacion": "Llevamos 1/4 a octavos: 1/4 = 2/8 y 5/8 - 2/8 = 3/8"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 5/6 - 1/8?",
+        "opciones": [
+          "17/24",
+          "4/14",
+          "7/24",
+          "9/24"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "MCM de 6 y 8 es 24: 5/6 = 20/24 y 1/8 = 3/24; 20 - 3 = 17/24"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 7/12 - 1/3?",
+        "opciones": [
+          "1/4",
+          "3/12",
+          "5/12",
+          "2/12"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Convertimos 1/3 a doceavos: 1/3 = 4/12; 7/12 - 4/12 = 3/12 = 1/4"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 9/10 - 2/5?",
+        "opciones": [
+          "1/2",
+          "7/10",
+          "3/10",
+          "2/5"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Expresamos 2/5 en décimos: 2/5 = 4/10; 9/10 - 4/10 = 5/10 = 1/2"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 11/12 - 7/18?",
+        "opciones": [
+          "19/36",
+          "4/30",
+          "1/3",
+          "13/36"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "MCM de 12 y 18 es 36: 11/12 = 33/36 y 7/18 = 14/36; 33 - 14 = 19/36"
       }
     ],
     "multiplicacion": [
@@ -203,6 +291,50 @@ const GAME_DATA = {
         ],
         "respuesta_correcta": 0,
         "explicacion": "Multiplicamos numeradores 7×2 = 14 y denominadores 8×3 = 24; 14/24 se simplifica a 7/12"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 4/9 × 3/8?",
+        "opciones": [
+          "1/6",
+          "12/32",
+          "7/24",
+          "1/12"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Multiplicamos: 4×3 = 12 y 9×8 = 72; 12/72 se simplifica a 1/6"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 9/11 × 2/3?",
+        "opciones": [
+          "6/11",
+          "18/33",
+          "3/11",
+          "11/18"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Multiplicamos numeradores 9×2 = 18 y denominadores 11×3 = 33; 18/33 se simplifica a 6/11"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 7/8 × 4/5?",
+        "opciones": [
+          "7/10",
+          "28/45",
+          "11/20",
+          "3/5"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Multiplicamos 7×4 = 28 y 8×5 = 40; 28/40 se simplifica a 7/10"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 3/7 × 14/15?",
+        "opciones": [
+          "2/5",
+          "14/35",
+          "8/15",
+          "5/14"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Podemos simplificar antes de multiplicar: 14 y 7 se reducen a 2 y 1; 3×2 = 6, 1×15 = 15; 6/15 = 2/5"
       }
     ],
     "division": [
@@ -271,6 +403,50 @@ const GAME_DATA = {
         ],
         "respuesta_correcta": 0,
         "explicacion": "Multiplicamos 7/10 por el inverso de 7/5: 7×5 = 35 y 10×7 = 70; 35/70 se simplifica a 1/2"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 3/4 ÷ 5/8?",
+        "opciones": [
+          "6/5",
+          "3/10",
+          "5/6",
+          "8/15"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Invertimos 5/8 y multiplicamos: 3×8 = 24 y 4×5 = 20; 24/20 se simplifica a 6/5"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 5/6 ÷ 2/9?",
+        "opciones": [
+          "15/4",
+          "5/27",
+          "9/12",
+          "4/15"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Multiplicamos 5/6 por el inverso de 2/9: 5×9 = 45 y 6×2 = 12; 45/12 se simplifica a 15/4"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 7/9 ÷ 1/6?",
+        "opciones": [
+          "14/3",
+          "7/54",
+          "9/14",
+          "7/3"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Multiplicamos 7/9 por el inverso de 1/6: 7×6 = 42 y 9×1 = 9; 42/9 se simplifica a 14/3"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 8/15 ÷ 4/5?",
+        "opciones": [
+          "2/3",
+          "40/15",
+          "3/8",
+          "5/6"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Multiplicamos 8/15 por el inverso de 4/5: 8×5 = 40 y 15×4 = 60; 40/60 se simplifica a 2/3"
       }
     ]
   },
@@ -305,6 +481,12 @@ const GAME_DATA = {
         "puntos": 10
       },
       {
+        "id": "primera_resta",
+        "nombre": "Primera Resta",
+        "descripcion": "Completaste tu primera resta",
+        "puntos": 10
+      },
+      {
         "id": "primera_multiplicacion",
         "nombre": "Primera Multiplicación",
         "descripcion": "Completaste tu primera multiplicación",
@@ -327,6 +509,30 @@ const GAME_DATA = {
         "nombre": "Perfeccionista",
         "descripcion": "Nivel sin errores",
         "puntos": 100
+      },
+      {
+        "id": "puntaje_200",
+        "nombre": "Cazador de Puntos",
+        "descripcion": "Acumulaste 200 puntos totales",
+        "puntos": 40
+      },
+      {
+        "id": "puntaje_400",
+        "nombre": "Leyenda Numérica",
+        "descripcion": "Acumulaste 400 puntos totales",
+        "puntos": 60
+      },
+      {
+        "id": "maestro_mixto",
+        "nombre": "Maestro Mixto",
+        "descripcion": "Completaste un modo mixto con al menos 80% de aciertos",
+        "puntos": 80
+      },
+      {
+        "id": "leyenda_racha",
+        "nombre": "Leyenda de la Racha",
+        "descripcion": "Alcanzaste una racha de 10 respuestas correctas",
+        "puntos": 120
       }
     ],
     "puntuacion": {
@@ -345,14 +551,19 @@ let gameState = {
     streak: 0,
     maxStreak: 0,
     achievements: [],
+    sessionAchievements: [],
     currentCategory: null,
     currentQuestions: [],
     currentQuestionIndex: 0,
     correctAnswers: 0,
     incorrectAnswers: 0,
     sessionStartTime: null,
+    sessionPoints: 0,
+    bestSessionScore: 0,
+    scoreHistory: [],
+    lastScorePercent: 0,
     timerInterval: null,
-    timeRemaining: 30
+    timeRemaining: 60
 };
 
 // Inicializar aplicación
@@ -433,6 +644,13 @@ function startGame(category) {
     gameState.correctAnswers = 0;
     gameState.incorrectAnswers = 0;
     gameState.sessionStartTime = Date.now();
+    gameState.sessionPoints = 0;
+    gameState.sessionAchievements = [];
+    const newAchievementsContainer = document.getElementById('new-achievements');
+    if (newAchievementsContainer) {
+        newAchievementsContainer.classList.remove('active');
+        newAchievementsContainer.innerHTML = '';
+    }
 
     if (category === 'mixed') {
         gameState.currentQuestions = [];
@@ -482,21 +700,33 @@ function checkAnswer(selectedIndex) {
 
     clearInterval(gameState.timerInterval);
 
+    const scoreConfig = GAME_DATA.gamificacion.puntuacion;
+    const baseCorrect = scoreConfig?.respuesta_correcta ?? 0;
+    const bonusSpeed = scoreConfig?.bonus_velocidad ?? 0;
+    const bonusStreak = scoreConfig?.bonus_racha ?? 0;
+    const penalty = scoreConfig?.respuesta_incorrecta ?? 0;
+
     if (isCorrect) {
         gameState.correctAnswers++;
         gameState.streak++;
         gameState.maxStreak = Math.max(gameState.maxStreak, gameState.streak);
-        let points = 10;
-        if (gameState.timeRemaining > 20) points += 5;
-        if (gameState.streak >= 3) points += 2;
-        gameState.totalPoints += points;
+        let points = baseCorrect;
+        if (gameState.timeRemaining > 20) points += Math.max(0, bonusSpeed);
+        if (gameState.streak >= 3) points += Math.max(0, bonusStreak);
+        gameState.totalPoints = Math.max(0, gameState.totalPoints + points);
+        gameState.sessionPoints = Math.max(0, gameState.sessionPoints + points);
         showFeedback(true, question.explicacion, points);
         checkAchievements(question);
     } else {
         gameState.incorrectAnswers++;
         gameState.streak = 0;
-        gameState.totalPoints = Math.max(0, gameState.totalPoints - 2);
-        showFeedback(false, question.explicacion);
+        gameState.totalPoints = Math.max(0, gameState.totalPoints + penalty);
+        gameState.sessionPoints = Math.max(0, gameState.sessionPoints + penalty);
+        showFeedback(false, question.explicacion, Math.abs(penalty));
+        checkScoreAchievements();
+    }
+    if (isCorrect) {
+        checkScoreAchievements();
     }
     updateLevel();
     updateUI();
@@ -515,7 +745,8 @@ function showFeedback(isCorrect, explanation, points = 0) {
         text.style.color = '#51cf66';
     } else {
         icon.textContent = '❌';
-        text.textContent = '¡Incorrecto!';
+        const penaltyText = points ? ` -${points} puntos` : '';
+        text.textContent = `¡Incorrecto!${penaltyText}`;
         text.style.color = '#ff6b6b';
     }
     explanationDiv.textContent = explanation;
@@ -535,22 +766,63 @@ function showResults() {
     const total = gameState.currentQuestions.length;
     const correct = gameState.correctAnswers;
     const incorrect = gameState.incorrectAnswers;
-    const accuracy = Math.round((correct / total) * 100);
+    const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
+    const sessionPoints = Math.max(0, Math.round(gameState.sessionPoints));
 
     document.getElementById('correct-answers').textContent = correct;
     document.getElementById('incorrect-answers').textContent = incorrect;
-    document.getElementById('points-earned').textContent = correct * 10;
+    document.getElementById('points-earned').textContent = sessionPoints;
     document.getElementById('accuracy').textContent = accuracy + '%';
 
-    setSCORMScore(accuracy);
-    setSCORMStatus(accuracy >= 70 ? 'passed' : 'completed');
+    const scoreConfig = GAME_DATA.gamificacion.puntuacion;
+    const maxPerQuestion = Math.max(0,
+        (scoreConfig?.respuesta_correcta ?? 0) +
+        Math.max(0, scoreConfig?.bonus_velocidad ?? 0) +
+        Math.max(0, scoreConfig?.bonus_racha ?? 0)
+    );
+    const maxSessionPoints = total > 0 ? maxPerQuestion * total : 0;
+    let scorePercent = maxSessionPoints > 0
+        ? Math.round((sessionPoints / maxSessionPoints) * 100)
+        : accuracy;
+    scorePercent = Math.max(0, Math.min(100, scorePercent));
+    gameState.lastScorePercent = scorePercent;
+
+    const durationSeconds = gameState.sessionStartTime
+        ? Math.max(1, Math.round((Date.now() - gameState.sessionStartTime) / 1000))
+        : 0;
+    const sessionSummary = {
+        date: new Date().toISOString(),
+        category: gameState.currentCategory,
+        categoryLabel: getCategoryLabel(gameState.currentCategory),
+        correct,
+        incorrect,
+        points: sessionPoints,
+        accuracy,
+        duration: durationSeconds
+    };
+
+    gameState.scoreHistory = [sessionSummary, ...gameState.scoreHistory].slice(0, 10);
+    gameState.bestSessionScore = Math.max(gameState.bestSessionScore, sessionPoints);
+
+    setSCORMScore(scorePercent);
+    setSCORMStatus(scorePercent >= 70 ? 'passed' : 'completed');
+
+    checkPostLevelAchievements(accuracy);
+    checkScoreAchievements();
+    updateScoreboard();
+    showNewAchievements();
+    updateUI();
     showScreen('results-screen');
     saveGameProgress();
 }
 
 function resetTimer() {
     clearInterval(gameState.timerInterval);
-    gameState.timeRemaining = 30;
+    gameState.timeRemaining = 60;
+    const timerEl = document.getElementById('timer');
+    if (timerEl) {
+        timerEl.classList.remove('warning');
+    }
     updateTimerDisplay();
     gameState.timerInterval = setInterval(() => {
         gameState.timeRemaining--;
@@ -585,6 +857,9 @@ function checkAchievements(question) {
     if (question.pregunta.includes('+') && !gameState.achievements.includes('primera_suma')) {
         unlockAchievement('primera_suma');
     }
+    if (question.pregunta.includes('-') && !gameState.achievements.includes('primera_resta')) {
+        unlockAchievement('primera_resta');
+    }
     if (question.pregunta.includes('×') && !gameState.achievements.includes('primera_multiplicacion')) {
         unlockAchievement('primera_multiplicacion');
     }
@@ -594,19 +869,46 @@ function checkAchievements(question) {
     if (gameState.streak === 5 && !gameState.achievements.includes('racha_5')) {
         unlockAchievement('racha_5');
     }
-    if (gameState.incorrectAnswers === 0 && 
+    if (gameState.streak === 10 && !gameState.achievements.includes('leyenda_racha')) {
+        unlockAchievement('leyenda_racha');
+    }
+    if (gameState.incorrectAnswers === 0 &&
         gameState.currentQuestionIndex === gameState.currentQuestions.length - 1 &&
         !gameState.achievements.includes('perfeccionista')) {
         unlockAchievement('perfeccionista');
     }
 }
 
+function checkScoreAchievements() {
+    if (gameState.totalPoints >= 200 && !gameState.achievements.includes('puntaje_200')) {
+        unlockAchievement('puntaje_200');
+    }
+    if (gameState.totalPoints >= 400 && !gameState.achievements.includes('puntaje_400')) {
+        unlockAchievement('puntaje_400');
+    }
+}
+
+function checkPostLevelAchievements(accuracy) {
+    if (gameState.currentCategory === 'mixed' &&
+        accuracy >= 80 &&
+        !gameState.achievements.includes('maestro_mixto')) {
+        unlockAchievement('maestro_mixto');
+    }
+}
+
 function unlockAchievement(achievementId) {
+    if (gameState.achievements.includes(achievementId)) {
+        return;
+    }
     gameState.achievements.push(achievementId);
     const achievement = GAME_DATA.gamificacion.logros.find(a => a.id === achievementId);
     if (achievement) {
-        gameState.totalPoints += achievement.puntos;
-        showNotification(`¡Logro desbloqueado! ${achievement.nombre} (+${achievement.puntos} puntos)`);
+        gameState.totalPoints = Math.max(0, gameState.totalPoints + achievement.puntos);
+        gameState.sessionPoints = Math.max(0, gameState.sessionPoints + achievement.puntos);
+        if (!gameState.sessionAchievements.includes(achievementId)) {
+            gameState.sessionAchievements.push(achievementId);
+        }
+        showNotification(`¡Insignia desbloqueada! ${achievement.nombre} (+${achievement.puntos} puntos)`);
     }
     updateAchievementsDisplay();
 }
@@ -620,7 +922,8 @@ function updateAchievementsDisplay() {
         if (gameState.achievements.includes(logro.id)) {
             div.classList.add('unlocked');
         }
-        div.textContent = `🏆 ${logro.nombre}`;
+        div.textContent = `🏅 ${logro.nombre}`;
+        div.title = logro.descripcion;
         achievementsList.appendChild(div);
     });
 }
@@ -629,6 +932,14 @@ function updateUI() {
     document.getElementById('total-points').textContent = gameState.totalPoints;
     document.getElementById('current-level').textContent = gameState.currentLevel;
     document.getElementById('streak').textContent = gameState.streak;
+    const bestScoreElement = document.getElementById('best-score');
+    if (bestScoreElement) {
+        bestScoreElement.textContent = gameState.bestSessionScore;
+    }
+    const badgeCountElement = document.getElementById('badge-count');
+    if (badgeCountElement) {
+        badgeCountElement.textContent = gameState.achievements.length;
+    }
 
     const currentLevelData = GAME_DATA.gamificacion.niveles.find(n => n.nivel === gameState.currentLevel);
     const nextLevelData = GAME_DATA.gamificacion.niveles.find(n => n.nivel === gameState.currentLevel + 1);
@@ -646,6 +957,143 @@ function updateUI() {
         document.getElementById('progress-text').textContent = '¡Nivel máximo!';
     }
     updateAchievementsDisplay();
+}
+
+function updateScoreboard() {
+    const scoreboardList = document.getElementById('scoreboard-list');
+    if (!scoreboardList) {
+        return;
+    }
+    scoreboardList.innerHTML = '';
+
+    if (!gameState.scoreHistory || gameState.scoreHistory.length === 0) {
+        const emptyState = document.createElement('div');
+        emptyState.className = 'scoreboard-empty';
+        emptyState.textContent = 'Juega una partida para ver tus resultados.';
+        scoreboardList.appendChild(emptyState);
+        return;
+    }
+
+    gameState.scoreHistory.forEach(entry => {
+        const item = document.createElement('div');
+        item.className = 'scoreboard-item';
+        const parsedPoints = Number(entry.points);
+        const pointsValue = Number.isFinite(parsedPoints) ? parsedPoints : (entry.points ?? 0);
+        if (Number.isFinite(parsedPoints) && parsedPoints === gameState.bestSessionScore && parsedPoints > 0) {
+            item.classList.add('highlight');
+        }
+        const accuracyValue = typeof entry.accuracy === 'number'
+            ? `${entry.accuracy}%`
+            : (entry.accuracy || '0%');
+        const categoryValue = entry.categoryLabel || getCategoryLabel(entry.category);
+        const durationValue = formatDuration(entry.duration);
+        const dateValue = formatDateLabel(entry.date);
+
+        const pointsSpan = createScoreboardField(pointsValue, 'Puntos');
+        const accuracySpan = createScoreboardField(accuracyValue, 'Precisión');
+        const categorySpan = createScoreboardField(categoryValue, 'Modo');
+        const durationSpan = createScoreboardField(durationValue, 'Tiempo');
+        const dateSpan = createScoreboardField(dateValue, 'Fecha');
+
+        item.appendChild(pointsSpan);
+        item.appendChild(accuracySpan);
+        item.appendChild(categorySpan);
+        item.appendChild(durationSpan);
+        item.appendChild(dateSpan);
+
+        scoreboardList.appendChild(item);
+    });
+}
+
+function showNewAchievements() {
+    const container = document.getElementById('new-achievements');
+    if (!container) {
+        return;
+    }
+    container.innerHTML = '';
+    if (!gameState.sessionAchievements || gameState.sessionAchievements.length === 0) {
+        container.classList.remove('active');
+        return;
+    }
+
+    container.classList.add('active');
+    const heading = document.createElement('h3');
+    heading.textContent = 'Insignias desbloqueadas';
+    container.appendChild(heading);
+
+    gameState.sessionAchievements.forEach(id => {
+        const achievement = GAME_DATA.gamificacion.logros.find(a => a.id === id);
+        if (!achievement) {
+            return;
+        }
+        const item = document.createElement('div');
+        item.className = 'new-achievement-item';
+
+        const name = document.createElement('strong');
+        name.textContent = achievement.nombre;
+        const description = document.createElement('span');
+        description.textContent = achievement.descripcion;
+        const reward = document.createElement('small');
+        reward.textContent = `+${achievement.puntos} puntos`;
+
+        item.appendChild(name);
+        item.appendChild(description);
+        item.appendChild(reward);
+
+        container.appendChild(item);
+    });
+}
+
+function getCategoryLabel(category) {
+    const labels = {
+        suma: 'Suma',
+        resta: 'Resta',
+        multiplicacion: 'Multiplicación',
+        division: 'División',
+        mixed: 'Modo mixto'
+    };
+    return labels[category] || 'General';
+}
+
+function formatDuration(seconds) {
+    const numericSeconds = Number(seconds);
+    if (!Number.isFinite(numericSeconds) || numericSeconds <= 0) {
+        return '—';
+    }
+    const totalSeconds = Math.floor(numericSeconds);
+    const minutes = Math.floor(totalSeconds / 60);
+    const secs = totalSeconds % 60;
+    if (minutes === 0) {
+        return `${secs}s`;
+    }
+    return `${minutes}m ${secs.toString().padStart(2, '0')}s`;
+}
+
+function formatDateLabel(value) {
+    if (!value) {
+        return '—';
+    }
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) {
+        return '—';
+    }
+    return date.toLocaleString('es-ES', {
+        day: '2-digit',
+        month: 'short',
+        hour: '2-digit',
+        minute: '2-digit'
+    });
+}
+
+function createScoreboardField(value, label) {
+    const span = document.createElement('span');
+    const strong = document.createElement('strong');
+    strong.textContent = value != null ? String(value) : '—';
+    span.appendChild(strong);
+    if (label) {
+        span.appendChild(document.createTextNode(` ${label}`));
+    }
+    return span;
 }
 
 function showNotification(message) {
@@ -673,11 +1121,15 @@ function saveGameProgress() {
         currentLevel: gameState.currentLevel,
         maxStreak: gameState.maxStreak,
         achievements: gameState.achievements,
+        bestSessionScore: gameState.bestSessionScore,
+        scoreHistory: gameState.scoreHistory,
+        lastScorePercent: gameState.lastScorePercent,
         lastPlayed: Date.now()
     };
     saveSuspendData(progressData);
-    const percentage = Math.min(100, Math.round((gameState.totalPoints / 500) * 100));
-    setSCORMScore(percentage);
+    const fallbackScore = Math.min(100, Math.round((gameState.totalPoints / 500) * 100));
+    const scormScore = gameState.lastScorePercent || fallbackScore;
+    setSCORMScore(scormScore);
 }
 
 function loadGameProgress() {
@@ -687,9 +1139,25 @@ function loadGameProgress() {
         gameState.currentLevel = savedData.currentLevel || 1;
         gameState.maxStreak = savedData.maxStreak || 0;
         gameState.achievements = savedData.achievements || [];
+        gameState.bestSessionScore = savedData.bestSessionScore || 0;
+        const savedHistory = Array.isArray(savedData.scoreHistory) ? savedData.scoreHistory : [];
+        gameState.scoreHistory = savedHistory.slice(0, 10).map(entry => {
+            const normalizedAccuracy = typeof entry?.accuracy === 'string'
+                ? (parseInt(entry.accuracy, 10) || entry.accuracy)
+                : entry?.accuracy;
+            return {
+                ...entry,
+                categoryLabel: entry?.categoryLabel || getCategoryLabel(entry?.category),
+                accuracy: normalizedAccuracy
+            };
+        });
+        gameState.lastScorePercent = savedData.lastScorePercent || 0;
         console.log('Progreso cargado:', savedData);
+        updateAchievementsDisplay();
+        updateScoreboard();
         return savedData;
     }
+    updateScoreboard();
     return null;
 }
 

@@ -25,12 +25,20 @@
                     <span class="stat-value" id="total-points">0</span>
                 </div>
                 <div class="stat-item">
+                    <span class="stat-label">Mejor puntaje</span>
+                    <span class="stat-value" id="best-score">0</span>
+                </div>
+                <div class="stat-item">
                     <span class="stat-label">Nivel</span>
                     <span class="stat-value" id="current-level">1</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-label">Racha</span>
                     <span class="stat-value" id="streak">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Insignias</span>
+                    <span class="stat-value" id="badge-count">0</span>
                 </div>
             </div>
             <div class="progress-container">
@@ -41,7 +49,7 @@
                 <div class="progress-text" id="progress-text">0 / 100</div>
             </div>
             <div class="achievements">
-                <h3>Logros</h3>
+                <h3>Insignias</h3>
                 <div id="achievements-list"></div>
             </div>
         </aside>
@@ -81,7 +89,7 @@
             <div id="game-screen" class="screen">
                 <div class="game-header">
                     <button id="back-btn" class="btn btn-secondary">← Volver</button>
-                    <div class="timer" id="timer">⏱️ 30</div>
+                    <div class="timer" id="timer">⏱️ 60</div>
                     <div class="question-counter" id="question-counter">Pregunta 1/10</div>
                 </div>
                 <div class="question-container">
@@ -124,6 +132,10 @@
                     </div>
                 </div>
                 <div class="new-achievements" id="new-achievements"></div>
+                <div class="scoreboard" id="scoreboard">
+                    <h2>Historial de puntuaciones</h2>
+                    <div id="scoreboard-list" class="scoreboard-list"></div>
+                </div>
                 <div class="results-buttons">
                     <button id="play-again-btn" class="btn btn-primary">🔄 Jugar de Nuevo</button>
                     <button id="change-category-btn" class="btn btn-secondary">📚 Cambiar Categoría</button>
