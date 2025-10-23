@@ -58,31 +58,99 @@
         <main id="main-content">
             <!-- Pantalla de inicio -->
             <div id="welcome-screen" class="screen active">
-                <h1>¡Bienvenido al Juego de Fracciones!</h1>
-                <p class="subtitle">Practica operaciones con fracciones de forma divertida</p>
-                <div class="categories">
-                    <div class="category-card" data-category="suma">
-                        <div class="category-icon">➕</div>
-                        <h3>Suma</h3>
-                        <p>Con fracciones</p>
+                <div class="welcome-header">
+                    <div class="welcome-copy">
+                        <h1>¡Bienvenido al Juego de Fracciones!</h1>
+                        <p class="subtitle">Practica operaciones con fracciones de forma divertida</p>
+                        <div class="pill-row">
+                            <span class="pill">Niveles dinámicos</span>
+                            <span class="pill">Explicaciones paso a paso</span>
+                            <span class="pill">Progreso guardado</span>
+                        </div>
                     </div>
-                    <div class="category-card" data-category="resta">
-                        <div class="category-icon">➖</div>
-                        <h3>Resta</h3>
-                        <p>Con fracciones</p>
-                    </div>
-                    <div class="category-card" data-category="multiplicacion">
-                        <div class="category-icon">✖️</div>
-                        <h3>Multiplicación</h3>
-                        <p>De fracciones</p>
-                    </div>
-                    <div class="category-card" data-category="division">
-                        <div class="category-icon">➗</div>
-                        <h3>División</h3>
-                        <p>De fracciones</p>
+                    <div class="welcome-card hero-card">
+                        <h2>Tu aventura con números</h2>
+                        <p>Aprende jugando, consigue puntos y desbloquea insignias coloridas mientras mejoras tus habilidades.</p>
+                        <ul class="hero-list">
+                            <li>🎯 Retos breves y divertidos</li>
+                            <li>💬 Retroalimentación inmediata</li>
+                            <li>🏆 Recompensas por cada logro</li>
+                        </ul>
                     </div>
                 </div>
-                <button id="mixed-mode-btn" class="btn btn-primary">🎲 Modo Mixto (Todas las operaciones)</button>
+
+                <div class="welcome-highlights">
+                    <div class="highlight-card">
+                        <h3>Explora categorías</h3>
+                        <p>Elige la operación que quieras practicar. Puedes cambiar en cualquier momento.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Aprende con ejemplos</h3>
+                        <p>Cada respuesta incluye una explicación clara para que entiendas el proceso.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Sigue tu progreso</h3>
+                        <p>Revisa tus puntos, rachas e insignias desde el panel lateral.</p>
+                    </div>
+                </div>
+
+                <div class="cta-hint">Selecciona una categoría para comenzar o prueba el modo mixto para combinar todos los retos.</div>
+
+                <div class="categories">
+                    <div class="category-row">
+                        <div class="category-card" data-category="suma">
+                            <div class="category-icon">➕</div>
+                            <h3>Suma</h3>
+                            <p>Con fracciones</p>
+                        </div>
+                        <div class="category-card" data-category="resta">
+                            <div class="category-icon">➖</div>
+                            <h3>Resta</h3>
+                            <p>Con fracciones</p>
+                        </div>
+                    </div>
+                    <div class="category-row">
+                        <div class="category-card" data-category="multiplicacion">
+                            <div class="category-icon">✖️</div>
+                            <h3>Multiplicación</h3>
+                            <p>De fracciones</p>
+                        </div>
+                        <div class="category-card" data-category="division">
+                            <div class="category-icon">➗</div>
+                            <h3>División</h3>
+                            <p>De fracciones</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome-actions">
+                    <button id="mixed-mode-btn" class="btn btn-primary">🎲 Modo Mixto (Todas las operaciones)</button>
+                    <div class="encouragement">
+                        <strong>¿Listo para intentarlo?</strong>
+                        <p>Escoge el modo que prefieras y verás tu progreso crecer pregunta tras pregunta.</p>
+                    </div>
+                </div>
+
+                <div class="how-to-play">
+                    <h2>¿Cómo jugar?</h2>
+                    <ol class="step-list">
+                        <li>Escoge una operación o el modo mixto para recibir preguntas variadas.</li>
+                        <li>Lee la pregunta con calma y selecciona la respuesta correcta.</li>
+                        <li>Revisa la explicación y continúa para sumar puntos y ganar insignias.</li>
+                    </ol>
+                </div>
+
+                <div class="tips-section">
+                    <h2>Consejos rápidos</h2>
+                    <ul class="tip-list">
+                        <li><span>💡</span> Usa las explicaciones para entender cada paso y mejorar en la siguiente ronda.</li>
+                        <li><span>📝</span> Ten a mano papel y lápiz si quieres resolver las fracciones manualmente.</li>
+                        <li><span>🎉</span> Mantén tu racha para desbloquear más insignias y aumentar tu puntaje.</li>
+                    </ul>
+                    <div class="support-card">
+                        <strong>¿Necesitas un descanso?</strong>
+                        <p>Puedes volver al menú cuando quieras para elegir otro reto o repasar tus resultados.</p>
+                    </div>
+                </div>
             </div>
 
             <!-- Pantalla de juego -->
