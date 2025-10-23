@@ -1,7 +1,7 @@
 // Datos del juego
 const GAME_DATA = {
   "operaciones": {
-    "suma_mismo_denominador": [
+    "suma": [
       {
         "pregunta": "¿Cuál es el resultado de 2/5 + 1/5?",
         "opciones": [
@@ -22,21 +22,8 @@ const GAME_DATA = {
           "4/14"
         ],
         "respuesta_correcta": 0,
-        "explicacion": "Sumamos los numeradores: 4 + 2 = 6, y mantenemos el denominador 7"
+        "explicacion": "Sumamos los numeradores: 4 + 2 = 6 y mantenemos el denominador 7"
       },
-      {
-        "pregunta": "¿Cuál es el resultado de 3/8 - 1/8?",
-        "opciones": [
-          "2/8",
-          "1/4",
-          "4/16",
-          "2/16"
-        ],
-        "respuesta_correcta": 0,
-        "explicacion": "Restamos los numeradores: 3 - 1 = 2, y mantenemos el denominador 8"
-      }
-    ],
-    "suma_diferente_denominador": [
       {
         "pregunta": "¿Cuál es el resultado de 1/2 + 1/3?",
         "opciones": [
@@ -46,7 +33,7 @@ const GAME_DATA = {
           "3/6"
         ],
         "respuesta_correcta": 0,
-        "explicacion": "Método mariposa: (1×3)+(1×2) = 5 en el numerador, 2×3 = 6 en el denominador"
+        "explicacion": "Buscamos un denominador común (6): 1/2 = 3/6 y 1/3 = 2/6, luego sumamos 3 + 2 = 5"
       },
       {
         "pregunta": "¿Cuál es el resultado de 1/4 + 1/6?",
@@ -57,18 +44,97 @@ const GAME_DATA = {
           "5/24"
         ],
         "respuesta_correcta": 0,
-        "explicacion": "Método mariposa: (1×6)+(1×4) = 10, simplificando: 10/24 = 5/12"
+        "explicacion": "El mínimo común múltiplo de 4 y 6 es 12: 1/4 = 3/12 y 1/6 = 2/12, 3 + 2 = 5/12"
       },
       {
-        "pregunta": "¿Cuál es el resultado de 2/3 - 1/4?",
+        "pregunta": "¿Cuál es el resultado de 3/10 + 2/5?",
         "opciones": [
-          "5/12",
-          "1/7",
-          "3/12",
-          "8/12"
+          "7/10",
+          "5/15",
+          "5/10",
+          "6/10"
         ],
         "respuesta_correcta": 0,
-        "explicacion": "Método mariposa: (2×4)-(1×3) = 8-3 = 5, denominador: 3×4 = 12"
+        "explicacion": "Convertimos 2/5 a décimos: 2/5 = 4/10, luego 3/10 + 4/10 = 7/10"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 5/8 + 3/16?",
+        "opciones": [
+          "13/16",
+          "8/24",
+          "15/24",
+          "1/2"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "El denominador común es 16: 5/8 = 10/16, luego 10/16 + 3/16 = 13/16"
+      }
+    ],
+    "resta": [
+      {
+        "pregunta": "¿Cuál es el resultado de 3/8 - 1/8?",
+        "opciones": [
+          "2/8",
+          "1/4",
+          "4/16",
+          "2/16"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Restamos los numeradores: 3 - 1 = 2 y mantenemos el denominador 8"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 5/6 - 1/3?",
+        "opciones": [
+          "1/2",
+          "4/18",
+          "4/6",
+          "2/9"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Usamos denominador común 6: 1/3 = 2/6, 5/6 - 2/6 = 3/6 = 1/2"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 7/9 - 2/3?",
+        "opciones": [
+          "1/9",
+          "5/6",
+          "5/9",
+          "2/6"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Convertimos 2/3 a novenos: 2/3 = 6/9, luego 7/9 - 6/9 = 1/9"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 4/5 - 1/10?",
+        "opciones": [
+          "7/10",
+          "3/5",
+          "6/10",
+          "5/10"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Convertimos 4/5 a décimos: 4/5 = 8/10 y 8/10 - 1/10 = 7/10"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 3/4 - 1/6?",
+        "opciones": [
+          "7/12",
+          "2/24",
+          "1/2",
+          "5/12"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "El mínimo común múltiplo de 4 y 6 es 12: 3/4 = 9/12 y 1/6 = 2/12, 9/12 - 2/12 = 7/12"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 5/8 - 1/4?",
+        "opciones": [
+          "3/8",
+          "1/8",
+          "1/2",
+          "5/16"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Llevamos 1/4 a octavos: 1/4 = 2/8 y 5/8 - 2/8 = 3/8"
       }
     ],
     "multiplicacion": [
@@ -104,6 +170,39 @@ const GAME_DATA = {
         ],
         "respuesta_correcta": 0,
         "explicacion": "Multiplicamos: 1×4 = 4 (numerador), 2×5 = 10 (denominador)"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 2/5 × 3/4?",
+        "opciones": [
+          "3/10",
+          "5/9",
+          "5/12",
+          "6/9"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Multiplicamos numeradores 2×3 = 6 y denominadores 5×4 = 20; 6/20 se simplifica a 3/10"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 5/6 × 3/5?",
+        "opciones": [
+          "1/2",
+          "2/3",
+          "4/9",
+          "3/5"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Multiplicamos numeradores 5×3 = 15 y denominadores 6×5 = 30; 15/30 se simplifica a 1/2"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 7/8 × 2/3?",
+        "opciones": [
+          "7/12",
+          "14/24",
+          "9/16",
+          "5/12"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Multiplicamos numeradores 7×2 = 14 y denominadores 8×3 = 24; 14/24 se simplifica a 7/12"
       }
     ],
     "division": [
@@ -139,6 +238,39 @@ const GAME_DATA = {
         ],
         "respuesta_correcta": 0,
         "explicacion": "Multiplicación cruzada: 3×3 = 9 (numerador), 7×2 = 14 (denominador)"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 4/5 ÷ 2/3?",
+        "opciones": [
+          "6/5",
+          "8/15",
+          "6/7",
+          "10/12"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Multiplicamos 4/5 por el inverso de 2/3: 4×3 = 12 y 5×2 = 10; 12/10 se simplifica a 6/5"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 5/8 ÷ 1/4?",
+        "opciones": [
+          "5/2",
+          "5/32",
+          "4/5",
+          "8/20"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Multiplicamos 5/8 por el inverso de 1/4: 5×4 = 20 y 8×1 = 8; 20/8 se simplifica a 5/2"
+      },
+      {
+        "pregunta": "¿Cuál es el resultado de 7/10 ÷ 7/5?",
+        "opciones": [
+          "1/2",
+          "14/50",
+          "5/10",
+          "10/7"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Multiplicamos 7/10 por el inverso de 7/5: 7×5 = 35 y 10×7 = 70; 35/70 se simplifica a 1/2"
       }
     ]
   },
@@ -235,16 +367,67 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function setupEventListeners() {
     document.querySelectorAll('.category-card').forEach(card => {
-        card.addEventListener('click', function() { startGame(this.dataset.category); });
+        card.addEventListener('click', function() {
+            startGame(this.dataset.category);
+            closeSidebarOnMobile();
+        });
     });
-    document.getElementById('mixed-mode-btn').addEventListener('click', () => startGame('mixed'));
+    document.getElementById('mixed-mode-btn').addEventListener('click', () => {
+        startGame('mixed');
+        closeSidebarOnMobile();
+    });
     document.getElementById('back-btn').addEventListener('click', returnToMenu);
     document.getElementById('next-btn').addEventListener('click', nextQuestion);
     document.getElementById('play-again-btn').addEventListener('click', () => startGame(gameState.currentCategory));
     document.getElementById('change-category-btn').addEventListener('click', returnToMenu);
+
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    const sidebarOverlay = document.getElementById('sidebar-overlay');
+
+    if (sidebarToggle) {
+        sidebarToggle.addEventListener('click', () => toggleSidebar());
+    }
+
+    if (sidebarOverlay) {
+        sidebarOverlay.addEventListener('click', () => toggleSidebar(false));
+    }
+
+    document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && document.body.classList.contains('sidebar-open')) {
+            toggleSidebar(false);
+        }
+    });
+
+    window.addEventListener('resize', handleSidebarResize);
+    handleSidebarResize();
+}
+
+function toggleSidebar(forceState) {
+    const body = document.body;
+    const isOpen = body.classList.contains('sidebar-open');
+    const shouldOpen = typeof forceState === 'boolean' ? forceState : !isOpen;
+    body.classList.toggle('sidebar-open', shouldOpen);
+
+    const toggleButton = document.getElementById('sidebar-toggle');
+    if (toggleButton) {
+        toggleButton.setAttribute('aria-expanded', shouldOpen ? 'true' : 'false');
+    }
+}
+
+function closeSidebarOnMobile() {
+    if (window.innerWidth <= 1024) {
+        toggleSidebar(false);
+    }
+}
+
+function handleSidebarResize() {
+    if (window.innerWidth > 1024) {
+        toggleSidebar(false);
+    }
 }
 
 function startGame(category) {
+    closeSidebarOnMobile();
     gameState.currentCategory = category;
     gameState.currentQuestionIndex = 0;
     gameState.correctAnswers = 0;
@@ -481,6 +664,7 @@ function showScreen(screenId) {
 function returnToMenu() {
     clearInterval(gameState.timerInterval);
     showScreen('welcome-screen');
+    closeSidebarOnMobile();
 }
 
 function saveGameProgress() {
