@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Operaciones con Fracciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Panel lateral de progreso -->
+        <aside id="sidebar">
+            <div class="logo">
+                <h2>🎮 Fracciones</h2>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Puntos</span>
+                    <span class="stat-value" id="total-points">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Nivel</span>
+                    <span class="stat-value" id="current-level">1</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Racha</span>
+                    <span class="stat-value" id="streak">0</span>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-label" id="level-name">Aprendiz de Fracciones</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="progress-text" id="progress-text">0 / 100</div>
+            </div>
+            <div class="achievements">
+                <h3>Logros</h3>
+                <div id="achievements-list"></div>
+            </div>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main id="main-content">
+            <!-- Pantalla de inicio -->
+            <div id="welcome-screen" class="screen active">
+                <h1>¡Bienvenido al Juego de Fracciones!</h1>
+                <p class="subtitle">Practica operaciones con fracciones de forma divertida</p>
+                <div class="categories">
+                    <div class="category-card" data-category="suma_mismo_denominador">
+                        <div class="category-icon">➕</div>
+                        <h3>Suma/Resta</h3>
+                        <p>Mismo denominador</p>
+                    </div>
+                    <div class="category-card" data-category="suma_diferente_denominador">
+                        <div class="category-icon">🦋</div>
+                        <h3>Suma/Resta</h3>
+                        <p>Método mariposa</p>
+                    </div>
+                    <div class="category-card" data-category="multiplicacion">
+                        <div class="category-icon">✖️</div>
+                        <h3>Multiplicación</h3>
+                        <p>De fracciones</p>
+                    </div>
+                    <div class="category-card" data-category="division">
+                        <div class="category-icon">➗</div>
+                        <h3>División</h3>
+                        <p>De fracciones</p>
+                    </div>
+                </div>
+                <button id="mixed-mode-btn" class="btn btn-primary">🎲 Modo Mixto (Todas las operaciones)</button>
+            </div>
+
+            <!-- Pantalla de juego -->
+            <div id="game-screen" class="screen">
+                <div class="game-header">
+                    <button id="back-btn" class="btn btn-secondary">← Volver</button>
+                    <div class="timer" id="timer">⏱️ 30</div>
+                    <div class="question-counter" id="question-counter">Pregunta 1/10</div>
+                </div>
+                <div class="question-container">
+                    <h2 id="question-text">¿Cuál es el resultado de 1/2 + 1/3?</h2>
+                    <div id="options-container" class="options">
+                        <!-- Opciones se generarán dinámicamente -->
+                    </div>
+                    <div id="feedback" class="feedback hidden">
+                        <div class="feedback-icon"></div>
+                        <div class="feedback-text"></div>
+                        <div class="feedback-explanation"></div>
+                        <button id="next-btn" class="btn btn-primary">Siguiente →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pantalla de resultados -->
+            <div id="results-screen" class="screen">
+                <h1>¡Resultados!</h1>
+                <div class="results-summary">
+                    <div class="result-card">
+                        <div class="result-icon">🎯</div>
+                        <div class="result-label">Correctas</div>
+                        <div class="result-value" id="correct-answers">0</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-icon">❌</div>
+                        <div class="result-label">Incorrectas</div>
+                        <div class="result-value" id="incorrect-answers">0</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-icon">⭐</div>
+                        <div class="result-label">Puntos Ganados</div>
+                        <div class="result-value" id="points-earned">0</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-icon">📊</div>
+                        <div class="result-label">Precisión</div>
+                        <div class="result-value" id="accuracy">0%</div>
+                    </div>
+                </div>
+                <div class="new-achievements" id="new-achievements"></div>
+                <div class="results-buttons">
+                    <button id="play-again-btn" class="btn btn-primary">🔄 Jugar de Nuevo</button>
+                    <button id="change-category-btn" class="btn btn-secondary">📚 Cambiar Categoría</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Notificación flotante -->
+    <div id="notification" class="notification hidden">
+        <div class="notification-content"></div>
+    </div>
+
+    <script src="scorm-api.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
