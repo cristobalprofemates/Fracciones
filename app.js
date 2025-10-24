@@ -448,6 +448,448 @@ const GAME_DATA = {
         "respuesta_correcta": 0,
         "explicacion": "Multiplicamos 8/15 por el inverso de 4/5: 8×5 = 40 y 15×4 = 60; 40/60 se simplifica a 2/3"
       }
+    ],
+    "mixed": [
+      {
+        "pregunta": "Resuelve (2/3 + 1/6) × 3/4.",
+        "opciones": [
+          "5/8",
+          "2/3",
+          "7/12",
+          "3/8"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Sumamos 2/3 y 1/6 con denominador común 6: 4/6 + 1/6 = 5/6. Luego multiplicamos por 3/4 para obtener 15/24 = 5/8."
+      },
+      {
+        "pregunta": "Resuelve (5/8 - 1/4) ÷ 3/5.",
+        "opciones": [
+          "3/10",
+          "5/8",
+          "2/5",
+          "3/4"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Restamos 5/8 - 1/4 convirtiendo a octavos: 5/8 - 2/8 = 3/8. Luego dividimos entre 3/5 multiplicando por su inverso: 3/8 × 5/3 = 15/24 = 5/8."
+      },
+      {
+        "pregunta": "Calcula (3/4 × 2/3) + 1/6.",
+        "opciones": [
+          "5/6",
+          "2/3",
+          "3/4",
+          "7/12"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Multiplicamos 3/4 × 2/3 = 6/12 = 1/2. Luego sumamos 1/2 + 1/6 encontrando denominador común 6: 3/6 + 1/6 = 4/6 = 2/3."
+      },
+      {
+        "pregunta": "Resuelve (7/10 ÷ 7/5) - 1/4.",
+        "opciones": [
+          "3/10",
+          "2/5",
+          "1/4",
+          "3/4"
+        ],
+        "respuesta_correcta": 2,
+        "explicacion": "Dividimos 7/10 entre 7/5 multiplicando por el inverso: 7/10 × 5/7 = 35/70 = 1/2. Después restamos 1/2 - 1/4 = 2/4 - 1/4 = 1/4."
+      },
+      {
+        "pregunta": "Calcula (5/6 + 1/3) × 2/5.",
+        "opciones": [
+          "4/15",
+          "3/5",
+          "7/15",
+          "2/3"
+        ],
+        "respuesta_correcta": 2,
+        "explicacion": "Sumamos 5/6 + 1/3 usando denominador 6: 5/6 + 2/6 = 7/6. Luego multiplicamos 7/6 × 2/5 = 14/30, que se simplifica a 7/15."
+      },
+      {
+        "pregunta": "Resuelve (4/9 + 5/12) ÷ 3/4.",
+        "opciones": [
+          "31/27",
+          "43/36",
+          "25/24",
+          "19/18"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Sumamos 4/9 y 5/12 con denominador común 36: 16/36 + 15/36 = 31/36. Dividir entre 3/4 equivale a multiplicar por 4/3: 31/36 × 4/3 = 124/108 = 31/27."
+      },
+      {
+        "pregunta": "Calcula (3/5 ÷ 2/3) + 1/2.",
+        "opciones": [
+          "17/15",
+          "7/5",
+          "9/10",
+          "11/10"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Dividimos 3/5 entre 2/3 multiplicando por 3/2: 3/5 × 3/2 = 9/10. Luego sumamos 9/10 + 1/2 = 9/10 + 5/10 = 14/10 = 7/5."
+      },
+      {
+        "pregunta": "Resuelve (2/7 + 3/14) × 5/6.",
+        "opciones": [
+          "5/6",
+          "7/12",
+          "5/12",
+          "1/2"
+        ],
+        "respuesta_correcta": 2,
+        "explicacion": "Sumamos 2/7 + 3/14 llevando a denominador 14: 4/14 + 3/14 = 7/14 = 1/2. Luego 1/2 × 5/6 = 5/12."
+      },
+      {
+        "pregunta": "Calcula (9/8 - 1/3) ÷ 3/4.",
+        "opciones": [
+          "19/24",
+          "19/18",
+          "25/24",
+          "7/6"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Restamos 9/8 - 1/3 con denominador 24: 27/24 - 8/24 = 19/24. Al dividir entre 3/4 multiplicamos por 4/3: 19/24 × 4/3 = 76/72 = 19/18."
+      },
+      {
+        "pregunta": "Resuelve (5/12 × 3/5) + 1/4.",
+        "opciones": [
+          "2/5",
+          "3/8",
+          "1/2",
+          "7/12"
+        ],
+        "respuesta_correcta": 2,
+        "explicacion": "Multiplicamos 5/12 × 3/5 = 15/60 = 1/4. Luego sumamos 1/4 + 1/4 = 2/4 = 1/2."
+      },
+      {
+        "pregunta": "Calcula (7/9 + 2/3) × 3/7.",
+        "opciones": [
+          "13/21",
+          "11/18",
+          "17/21",
+          "5/9"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Convertimos 2/3 a novenos: 6/9. Sumamos 7/9 + 6/9 = 13/9 y multiplicamos por 3/7: 13/9 × 3/7 = 39/63 = 13/21."
+      },
+      {
+        "pregunta": "Resuelve (4/5 ÷ 2/3) + 3/10.",
+        "opciones": [
+          "9/10",
+          "7/5",
+          "3/2",
+          "6/5"
+        ],
+        "respuesta_correcta": 2,
+        "explicacion": "Dividimos 4/5 entre 2/3 multiplicando por 3/2: 4/5 × 3/2 = 12/10 = 6/5. Luego sumamos 6/5 + 3/10 = 12/10 + 3/10 = 15/10 = 3/2."
+      },
+      {
+        "pregunta": "Calcula (3/4 + 5/8) ÷ 7/6.",
+        "opciones": [
+          "33/28",
+          "41/32",
+          "27/28",
+          "15/16"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Llevamos 3/4 a octavos: 6/8. Sumamos 6/8 + 5/8 = 11/8. Dividir entre 7/6 equivale a multiplicar por 6/7: 11/8 × 6/7 = 66/56 = 33/28."
+      },
+      {
+        "pregunta": "Resuelve (2/3 × 3/4) + (5/12 ÷ 5/6).",
+        "opciones": [
+          "1",
+          "11/12",
+          "7/6",
+          "5/6"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Calculamos 2/3 × 3/4 = 6/12 = 1/2. Luego 5/12 ÷ 5/6 = 5/12 × 6/5 = 30/60 = 1/2. Al sumar 1/2 + 1/2 obtenemos 1."
+      },
+      {
+        "pregunta": "Calcula (5/7 + 2/5) × 3/4.",
+        "opciones": [
+          "117/140",
+          "9/14",
+          "33/70",
+          "81/140"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Usamos denominador 35: 5/7 = 25/35 y 2/5 = 14/35, sumando 39/35. Multiplicamos 39/35 × 3/4 = 117/140."
+      },
+      {
+        "pregunta": "Resuelve (11/12 - 5/18) ÷ 2/3.",
+        "opciones": [
+          "7/9",
+          "23/24",
+          "17/18",
+          "29/36"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Restamos con denominador 36: 33/36 - 10/36 = 23/36. Dividir entre 2/3 es multiplicar por 3/2: 23/36 × 3/2 = 69/72 = 23/24."
+      },
+      {
+        "pregunta": "Calcula (7/8 × 4/5) + (1/2 ÷ 3/4).",
+        "opciones": [
+          "41/30",
+          "37/30",
+          "43/30",
+          "13/10"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Multiplicamos 7/8 × 4/5 = 28/40 = 7/10. Luego 1/2 ÷ 3/4 = 1/2 × 4/3 = 4/6 = 2/3. Sumamos 7/10 + 2/3 = 21/30 + 20/30 = 41/30."
+      },
+      {
+        "pregunta": "Resuelve (9/10 - 2/5) × 5/6.",
+        "opciones": [
+          "7/12",
+          "5/12",
+          "3/8",
+          "1/3"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Convertimos 2/5 a décimos: 4/10. Restamos 9/10 - 4/10 = 5/10 = 1/2. Luego 1/2 × 5/6 = 5/12."
+      },
+      {
+        "pregunta": "Calcula (3/7 + 4/9) ÷ 5/14.",
+        "opciones": [
+          "17/9",
+          "22/9",
+          "25/9",
+          "19/9"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Sumamos con denominador 63: 27/63 + 28/63 = 55/63. Dividir entre 5/14 equivale a multiplicar por 14/5: 55/63 × 14/5 = 770/315 = 22/9."
+      },
+      {
+        "pregunta": "Resuelve (5/6 × 9/10) - 3/8.",
+        "opciones": [
+          "9/40",
+          "3/8",
+          "11/40",
+          "1/2"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Multiplicamos 5/6 × 9/10 = 45/60 = 3/4. Luego restamos 3/4 - 3/8 = 6/8 - 3/8 = 3/8."
+      },
+      {
+        "pregunta": "Calcula (4/9 ÷ 2/3) + (3/5 × 5/6).",
+        "opciones": [
+          "13/10",
+          "7/6",
+          "11/12",
+          "5/4"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Dividimos 4/9 entre 2/3: 4/9 × 3/2 = 12/18 = 2/3. Luego 3/5 × 5/6 = 15/30 = 1/2. Sumamos 2/3 + 1/2 = 4/6 + 3/6 = 7/6."
+      },
+      {
+        "pregunta": "Resuelve (7/12 + 5/18) × 2/3.",
+        "opciones": [
+          "35/54",
+          "29/54",
+          "31/54",
+          "17/36"
+        ],
+        "respuesta_correcta": 2,
+        "explicacion": "Sumamos con denominador 36: 21/36 + 10/36 = 31/36. Luego multiplicamos 31/36 × 2/3 = 62/108 = 31/54."
+      },
+      {
+        "pregunta": "Calcula (8/15 ÷ 4/5) + 1/6.",
+        "opciones": [
+          "4/5",
+          "7/6",
+          "5/6",
+          "11/12"
+        ],
+        "respuesta_correcta": 2,
+        "explicacion": "Dividimos 8/15 entre 4/5 multiplicando por 5/4: 8/15 × 5/4 = 40/60 = 2/3. Sumamos 2/3 + 1/6 = 4/6 + 1/6 = 5/6."
+      },
+      {
+        "pregunta": "Resuelve (3/5 + 7/10) ÷ 9/8.",
+        "opciones": [
+          "52/45",
+          "47/45",
+          "59/48",
+          "13/12"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Sumamos 3/5 + 7/10 llevando a décimos: 6/10 + 7/10 = 13/10. Dividir entre 9/8 equivale a multiplicar por 8/9: 13/10 × 8/9 = 104/90 = 52/45."
+      },
+      {
+        "pregunta": "Calcula (5/12 + 1/3) × 4/7.",
+        "opciones": [
+          "4/9",
+          "3/7",
+          "5/8",
+          "2/5"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Convertimos 1/3 a doceavos: 4/12. Sumamos 5/12 + 4/12 = 9/12 = 3/4. Luego 3/4 × 4/7 = 12/28 = 3/7."
+      },
+      {
+        "pregunta": "Resuelve (11/16 - 3/8) × 6/5.",
+        "opciones": [
+          "9/40",
+          "5/16",
+          "3/8",
+          "7/16"
+        ],
+        "respuesta_correcta": 2,
+        "explicacion": "Llevamos 3/8 a dieciseisavos: 6/16. Restamos 11/16 - 6/16 = 5/16. Multiplicamos 5/16 × 6/5 = 30/80 = 3/8."
+      },
+      {
+        "pregunta": "Calcula (2/3 ÷ 5/12) - 1/4.",
+        "opciones": [
+          "23/20",
+          "27/20",
+          "17/20",
+          "29/20"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Dividimos 2/3 entre 5/12 multiplicando por 12/5: 2/3 × 12/5 = 24/15 = 8/5. Luego restamos 8/5 - 1/4 = 32/20 - 5/20 = 27/20."
+      },
+      {
+        "pregunta": "Resuelve (7/9 + 5/12) × 3/7.",
+        "opciones": [
+          "5/12",
+          "43/84",
+          "37/84",
+          "41/84"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Sumamos con denominador 36: 28/36 + 15/36 = 43/36. Multiplicamos 43/36 × 3/7 = 129/252 = 43/84."
+      },
+      {
+        "pregunta": "Calcula (9/14 ÷ 3/7) + 2/5.",
+        "opciones": [
+          "19/10",
+          "13/10",
+          "11/10",
+          "7/5"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Dividimos 9/14 entre 3/7 multiplicando por 7/3: 9/14 × 7/3 = 63/42 = 3/2. Sumamos 3/2 + 2/5 = 15/10 + 4/10 = 19/10."
+      },
+      {
+        "pregunta": "Resuelve (5/8 + 3/16) ÷ 2/5.",
+        "opciones": [
+          "33/16",
+          "65/32",
+          "29/16",
+          "21/8"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Llevamos 5/8 a dieciseisavos: 10/16. Sumamos 10/16 + 3/16 = 13/16. Dividir entre 2/5 es multiplicar por 5/2: 13/16 × 5/2 = 65/32."
+      },
+      {
+        "pregunta": "Calcula (4/7 × 7/9) + (5/6 ÷ 5/12).",
+        "opciones": [
+          "19/9",
+          "22/9",
+          "17/9",
+          "25/9"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Multiplicamos 4/7 × 7/9 = 4/9. Luego 5/6 ÷ 5/12 = 5/6 × 12/5 = 60/30 = 2. Sumamos 4/9 + 2 = 4/9 + 18/9 = 22/9."
+      },
+      {
+        "pregunta": "Resuelve (6/11 + 5/22) × 3/4.",
+        "opciones": [
+          "45/88",
+          "51/88",
+          "43/88",
+          "39/88"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Convertimos 6/11 a veintidósavos: 12/22. Sumamos 12/22 + 5/22 = 17/22. Luego 17/22 × 3/4 = 51/88."
+      },
+      {
+        "pregunta": "Calcula (7/8 ÷ 7/12) - 1/6.",
+        "opciones": [
+          "5/3",
+          "4/3",
+          "7/6",
+          "3/2"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Dividimos 7/8 entre 7/12 multiplicando por 12/7: 7/8 × 12/7 = 12/8 = 3/2. Restamos 3/2 - 1/6 = 9/6 - 1/6 = 8/6 = 4/3."
+      },
+      {
+        "pregunta": "Resuelve (2/5 + 4/15) × 9/8.",
+        "opciones": [
+          "5/8",
+          "7/12",
+          "3/4",
+          "2/3"
+        ],
+        "respuesta_correcta": 2,
+        "explicacion": "Sumamos con denominador 15: 6/15 + 4/15 = 10/15 = 2/3. Luego 2/3 × 9/8 = 18/24 = 3/4."
+      },
+      {
+        "pregunta": "Calcula (5/9 × 3/4) + (7/10 ÷ 7/5).",
+        "opciones": [
+          "11/12",
+          "13/12",
+          "7/12",
+          "17/12"
+        ],
+        "respuesta_correcta": 0,
+        "explicacion": "Multiplicamos 5/9 × 3/4 = 15/36 = 5/12. Luego 7/10 ÷ 7/5 = 7/10 × 5/7 = 35/70 = 1/2. Sumamos 5/12 + 1/2 = 5/12 + 6/12 = 11/12."
+      },
+      {
+        "pregunta": "Resuelve (4/9 + 1/6) ÷ 5/12.",
+        "opciones": [
+          "11/15",
+          "22/15",
+          "17/15",
+          "19/15"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Sumamos con denominador 18: 8/18 + 3/18 = 11/18. Dividimos entre 5/12 multiplicando por 12/5: 11/18 × 12/5 = 132/90 = 22/15."
+      },
+      {
+        "pregunta": "Calcula (3/4 - 2/9) × 7/8.",
+        "opciones": [
+          "127/288",
+          "133/288",
+          "125/288",
+          "139/288"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Restamos con denominador 36: 27/36 - 8/36 = 19/36. Luego 19/36 × 7/8 = 133/288."
+      },
+      {
+        "pregunta": "Resuelve (5/6 ÷ 3/8) + 1/2.",
+        "opciones": [
+          "43/18",
+          "47/18",
+          "49/18",
+          "25/9"
+        ],
+        "respuesta_correcta": 2,
+        "explicacion": "Dividimos 5/6 entre 3/8 multiplicando por 8/3: 5/6 × 8/3 = 40/18 = 20/9. Luego sumamos 20/9 + 1/2 = 40/18 + 9/18 = 49/18."
+      },
+      {
+        "pregunta": "Calcula (2/3 + 4/9) × 3/5.",
+        "opciones": [
+          "7/9",
+          "3/5",
+          "2/3",
+          "11/15"
+        ],
+        "respuesta_correcta": 2,
+        "explicacion": "Sumamos 2/3 + 4/9 pasando a novenos: 6/9 + 4/9 = 10/9. Multiplicamos 10/9 × 3/5 = 30/45 = 2/3."
+      },
+      {
+        "pregunta": "Resuelve (11/15 - 2/9) ÷ 7/10.",
+        "opciones": [
+          "41/63",
+          "46/63",
+          "53/63",
+          "37/45"
+        ],
+        "respuesta_correcta": 1,
+        "explicacion": "Restamos con denominador 45: 33/45 - 10/45 = 23/45. Dividimos entre 7/10 multiplicando por 10/7: 23/45 × 10/7 = 230/315 = 46/63."
+      }
     ]
   },
   "gamificacion": {
@@ -525,7 +967,7 @@ const GAME_DATA = {
       {
         "id": "maestro_mixto",
         "nombre": "Maestro Mixto",
-        "descripcion": "Completaste un modo mixto con al menos 80% de aciertos",
+        "descripcion": "Completaste el modo combinado con al menos 80% de aciertos",
         "puntos": 80
       },
       {
@@ -583,10 +1025,13 @@ function setupEventListeners() {
             closeSidebarOnMobile();
         });
     });
-    document.getElementById('mixed-mode-btn').addEventListener('click', () => {
-        startGame('mixed');
-        closeSidebarOnMobile();
-    });
+    const mixedModeButton = document.getElementById('mixed-mode-btn');
+    if (mixedModeButton) {
+        mixedModeButton.addEventListener('click', () => {
+            startGame('mixed');
+            closeSidebarOnMobile();
+        });
+    }
     document.getElementById('back-btn').addEventListener('click', returnToMenu);
     document.getElementById('next-btn').addEventListener('click', nextQuestion);
     document.getElementById('play-again-btn').addEventListener('click', () => startGame(gameState.currentCategory));
@@ -652,18 +1097,15 @@ function startGame(category) {
         newAchievementsContainer.innerHTML = '';
     }
 
-    if (category === 'mixed') {
-        gameState.currentQuestions = [];
-        Object.values(GAME_DATA.operaciones).forEach(cat => {
-            gameState.currentQuestions = gameState.currentQuestions.concat(cat);
-        });
+    const questions = GAME_DATA.operaciones[category];
+    if (Array.isArray(questions)) {
+        gameState.currentQuestions = [...questions];
         shuffleArray(gameState.currentQuestions);
+        gameState.currentQuestions = gameState.currentQuestions.slice(0, 10);
     } else {
-        gameState.currentQuestions = [...GAME_DATA.operaciones[category]];
-        shuffleArray(gameState.currentQuestions);
+        console.warn(`Categoría "${category}" no encontrada en los datos del juego.`);
+        gameState.currentQuestions = [];
     }
-
-    gameState.currentQuestions = gameState.currentQuestions.slice(0, 10);
     showScreen('game-screen');
     showQuestion();
 }
@@ -1050,7 +1492,7 @@ function getCategoryLabel(category) {
         resta: 'Resta',
         multiplicacion: 'Multiplicación',
         division: 'División',
-        mixed: 'Modo mixto'
+        mixed: 'Modo combinado'
     };
     return labels[category] || 'General';
 }
